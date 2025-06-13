@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+</head>
+<body>
+    <textarea id="num1" inputmode="numeric"></textarea>
+    <span>+</span>
+    <textarea id="num2" inputmode="numeric"></textarea>
+    <textarea id="num" inputmode="numeric"></textarea>
+    <br>
+    <button type="button" onclick="add()">Add</button>
+    <script>
+        function add(){
+            var numb1 = document.getElementById("num1").value;
+            var numb2 = document.getElementById("num2").value;
+
+            var numb = parseInt(numb1) + parseInt(numb2);
+            document.getElementById("num").innerHTML=numb;
+        }
+    </script>
+</body>
+</html>

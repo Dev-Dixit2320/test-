@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Project Offer for Approval</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 600px;
+      background-color: #ffffff;
+      margin: 40px auto;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .header {
+      background-color: #007bff;
+      color: white;
+      padding: 15px;
+      border-radius: 10px 10px 0 0;
+      text-align: center;
+    }
+    .header img {
+      max-width: 500px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+    .content {
+      padding: 20px;
+    }
+    .content h2 {
+      color: #333333;
+    }
+    .info {
+      background-color: #f9f9f9;
+      padding: 15px;
+      border-radius: 8px;
+      margin-top: 10px;
+      line-height: 1.6;
+    }
+    .info strong {
+      color: #333;
+    }
+    .button-group {
+      margin-top: 20px;
+      text-align: center;
+    }
+    .btn {
+      display: inline-block;
+      margin: 10px 10px 0 10px;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      color: white;
+      font-weight: bold;
+    }
+    .btn-approve {
+      background-color: #28ace2;
+    }
+    .btn-reject {
+      background-color: #28ace2;
+    }
+    @media (max-width: 600px) {
+      .container {
+        margin: 10px;
+        padding: 15px;
+      }
+      .btn {
+        display: block;
+        width: 80%;
+        margin: 10px auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="https://creatorapp.zohopublic.com/materialconveyingengineers/conveymaster/report/All_Logo_Masters/4808088000000190007/Image/download-file/JmrvKt71mkWDqEY73eMeCDu8SfB9ATkKkAWutRjKxyG1Hmm9zMbKC1FZreWOYbrOnk0Wy0U8s7HR6gV9Zkhk67k7ZyVr2YPfjUGZ?filepath=/1748402982573481_Brand_Logo-Picsart-BackgroundRemover.png" alt="Company Logo">
+      <h1>Project Offer for Approval</h1>
+    </div>
+    <div class="content">
+      <p>Dear <strong>" + obj.Name + "</strong>,</p>
+      <p>Please find our detailed project offer attached for your review and approval.</p>
+      <p>Should you have any questions or require further clarification, feel free to contact us.</p>
+      <div class="button-group">
+        <a href="https://creatorapp.zohopublic.com/materialconveyingengineers/conveymaster/form-perma/Approve_Reject_offer/C6mFJBjUfJC4PgOShXmtYtpJMY25BFn1WV1RXQMKNFH4ZBHfdfb6N2SAJs7mX7ZtFkh4aPdDspW6j83DssTyWMszdKY5r6GqWFW0?Dropdown=Approved&zc_Header=false&Mail_Format=" + obj.ID + "\" class="btn btn-approve">Approve Offer</a>
+        <a href="https://creatorapp.zohopublic.com/materialconveyingengineers/conveymaster/form-perma/Approve_Reject_offer/C6mFJBjUfJC4PgOShXmtYtpJMY25BFn1WV1RXQMKNFH4ZBHfdfb6N2SAJs7mX7ZtFkh4aPdDspW6j83DssTyWMszdKY5r6GqWFW0?Dropdown=Rejected&zc_Header=false&Mail_Format=" + obj.ID + "\" class="btn btn-reject">Reject Offer</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

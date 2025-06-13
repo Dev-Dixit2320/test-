@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert Box</title>
+</head>
+<body>
+    <textarea id="name" placeholder="Enter Name"></textarea>
+    <br>
+    <textarea id="age" inputmode="numeric" placeholder="Enter age"></textarea>
+    <br>
+    <button type="submit" onclick="alertshow()">View</button>
+
+    <script>   
+        function alertshow(){
+            var Name = document.getElementById("name").value;
+            var age = document.getElementById("age").value;
+
+            if (age >=18) {
+                window.alert("Hi "+Name+ " and You are Eligible");
+            }
+            else{
+                window.alert("Hi "+Name+" and You are not Eligible");
+            }
+        }
+    </script>
+</body>
+</html>
